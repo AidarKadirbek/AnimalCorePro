@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Активация аккаунта</title>
+</head>
+<body>
+    <h1>Здравствуйте, {{ user.username }}!</h1>
+    <p>Спасибо за регистрацию на нашем сайте. Для активации вашего аккаунта перейдите по следующей ссылке:</p>
+    <a href="{{ activation_url }}">Активировать аккаунт</a>
+    <p>С уважением,<br>Команда сайта</p>
+</body>
+</html>

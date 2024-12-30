@@ -1,0 +1,78 @@
+.homepage-container {
+  font-family: Arial, sans-serif;
+  background: #ffffff; /* Белый фон для всей страницы */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homepage-header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.homepage-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.homepage-header p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.homepage-content {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.homepage-link {
+  text-decoration: none;
+  color: white;
+  background-color: #4CAF50;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.homepage-link:hover {
+  background-color: #45a049;
+}
+
+.homepage-footer {
+  margin-top: auto;
+  background-color: #f1f1f1;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #666;
+}
