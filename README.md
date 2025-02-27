@@ -1,25 +1,20 @@
-Проект "AnimalCorePro"
+AnimalCorePro is a comprehensive animal data management system designed for tracking and processing information about various animal types, breeds, individual characteristics, and weight records. It features user registration and management, along with API access and a React-based frontend.
 
-"AnimalCorePro" — это система управления данными о животных, предназначенная для отслеживания и обработки информации о различных типах животных, их породах, индивидуальных характеристиках и весе. Проект включает в себя функционал для регистрации и управления пользователями, а также доступ к данным через API и фронтенд на React.
-
-Структура данных:
-
-Animaltype: Таблица для хранения информации о типах животных (например, корова, лошадь). Включает поля: наименование типа, идентификатор.
-Breed: Таблица для пород животных. Содержит данные о породах, типах животных и их идентификаторы.
-Animal: Таблица с данными о животных, включая уникальный инвентарный номер, пол, кличку, дату прибытия и возраст животного. Также содержит ссылки на породу и родителя.
-Weighting: Таблица для хранения данных о взвешивании животных (животное, дата, вес в кг). Каждое животное может иметь только одно взвешивание на одну дату.
-Таблицы пользователей:
-
-Система поддерживает два типа пользователей: admin и user. Пользователи могут работать с данными всех таблиц, но пользователи могут видеть только свои записи в таблице Weighting.
-Функционал:
-
-Добавление, редактирование, удаление и валидация данных для каждой из таблиц.
-Регистрация пользователей с уникальными логинами и активацией по ссылке на почте. Пользователи создаются в неактивном состоянии и становятся активными после перехода по ссылке.
-API для взаимодействия с системой, которое позволяет выполнять CRUD операции с данными.
-Front-end интерфейс на React для работы с системой, включая страницы для регистрации, отображения и редактирования данных.
-Технологии:
-
-Backend: Python с использованием Django.
-Frontend: React.
-СУБД: SQLite.
-Проект предоставляет удобный и функциональный интерфейс для администрирования данных о животных, а также поддерживает управление пользователями и их ролями.
+Data Structure
+AnimalType: Stores information about animal types (e.g., cow, horse) with unique identifiers.
+Breed: Contains breed details, linking them to animal types.
+Animal: Maintains individual records, including inventory number, gender, name, arrival date, age, breed, and parent reference.
+Weighting: Records animal weight measurements with a restriction of one entry per animal per date.
+User Roles & Permissions
+Admin: Full access to all data and management features.
+User: Restricted access, only able to view their own weight records.
+Core Features
+CRUD operations for all data entities with validation.
+User registration with unique logins and email activation.
+API for seamless system interaction.
+React-based frontend for registration, data visualization, and editing.
+Tech Stack
+Backend: Python (Django)
+Frontend: React
+Database: SQLite
+AnimalCorePro offers a structured and efficient solution for managing animal-related data while ensuring secure user access and streamlined operations.
